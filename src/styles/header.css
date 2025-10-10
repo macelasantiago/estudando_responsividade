@@ -1,0 +1,78 @@
+header {
+    width: 100%;
+    padding: 28px 8%; /* 8% de padding nas laterais para ficar responsivo */
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav_logo {
+    width: 80px; /* tamanho do logo (imagem)*/
+}
+
+#nav_list {
+    list-style: none; /* remove os pontinhos */
+    display: flex;
+    gap: 48px; /* espaço entre os itens do menu */
+}
+
+.nav_item a{
+    text-decoration: none; /* remove o sublinhado */
+    color: #ED9180;
+    font-weight: 600; /* peso da fonte */
+}
+
+.nav_item.active a{
+    color: #dc6854; /* cor ao passar o mouse */
+    border-bottom:3px solid #dc6854; /* linha embaixo do item ativo */
+}
+
+#mobile_btn {
+    display: none; /* esconde o botão de menu mobile */
+}
+
+#mobile_menu {
+    display: none; /* esconde o menu mobile */
+}
+
+@media screen and (max-width: 1170px) {
+    #mobile_btn {
+        display: block; /* mostra o botão de menu mobile */
+        background-color: transparent;
+        font-size: 1.5rem;
+        border: none;
+        cursor: pointer;
+        color:#ED9180;  
+    }
+
+    #nav_list,
+    #navbar .btn_default {
+        display: none; /* esconde o menu desktop */
+    }
+
+    #mobile_menu.active {
+        display: flex; /* mostra o menu mobile */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        list-style: none; /* remove os pontinhos */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px; /* espaço entre os itens do menu */
+        margin: 12px 0;
+    }
+
+    #mobile_nav_list .nav_item a {
+        text-decoration: none; /* remove o sublinhado */
+        color: #ED9180;
+        font-weight: 600; /* peso da fonte */
+        font-size: 1.2rem;
+    }
+}
