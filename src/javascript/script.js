@@ -94,7 +94,7 @@ $(document).ready(function() {
         if (carrinho.length === 0) {
             alert('Seu carrinho está vazio!');
         } else {
-            let mensagem = '🛒 Itens no seu carrinho:\n\n';
+            let mensagem = 'Itens no seu carrinho:\n\n';
             carrinho.forEach((item, index) => {
                 mensagem += `${index + 1}. ${item.nome} - ${item.preco}\n`;
             });
