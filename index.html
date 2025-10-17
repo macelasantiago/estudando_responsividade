@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <meta name="description" content="Aiá Rosa - Loja de roupas femininas com peças versáteis e atemporais">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/header.css">
     <link rel="stylesheet" href="src/styles/home.css">
     <link rel="stylesheet" href="src/styles/pecas.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Aiá Rosa</title>
-
+    <title>Aiá Rosa - Loja de Roupas Femininas</title>
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <img src="src/images/main/rosa.png" id="nav_logo"/>
+            <img src="src/images/main/rosa.png" id="nav_logo" alt="Logo Aiá Rosa"/>
             
             <ul id="nav_list">
                 <li class="nav_item active">
                     <a href="#home">Início</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#menu">Peças</a>
+                    <a href="#destaques">Destaques</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#client">Clientes</a>
+                    <a href="#promocoes">Promoções</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#novidades">Novidades</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#sobre">Sobre Nós</a>
                 </li>
             </ul>
 
-            <button class="btn_default">
-                Peça já!
-            </button>
+            <div class="header-buttons">
+                <button id="carrinho_btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="carrinho_count">0</span>
+                </button>
+    
+                <button class="btn_default">
+                    Peça já!
+                </button>
+            </div>
 
             <button id="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -46,77 +58,81 @@
                     <a href="#home">Início</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#menu">Peças</a>
+                    <a href="#destaques">Destaques</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#client">Clientes</a>
+                    <a href="#promocoes">Promoções</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#novidades">Novidades</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#sobre">Sobre Nós</a>
                 </li>
             </ul>
 
-            <button class="btn_default">
-                Peça já!
-            </button>
+            <div class="mobile-buttons">
+                <button id="carrinho_btn_mobile" class="carrinho-btn-mobile">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Carrinho (<span id="carrinho_count_mobile">0</span>)
+                </button>
+                
+                <button class="btn_default">
+                    Peça já!
+                </button>
+            </div>
         </div>
     </header>
 
     <main id="content">
         <section id="home">
-            <div class="shape"></div>
             <div id="cta">
                 <h1 class="title">
                     Aiá Rosa
                 </h1>
                 <p class="description">
-                    Peças versáteis & Atemporais, feitas para você, mulher!
+                    Peças versáteis & Atemporais,<br> feitas para você, mulher!
                 </p>
 
                 <div id="cta_buttons">
-                    <a href="a" class="btn_default">
+                    <a href="#destaques" class="btn_default">
                         Ver peças
                     </a>
 
-                    <a href="a" class="btn_default">
+                    <a href="#sobre" class="btn_default">
                         Nossa localização
                     </a>
                 </div>
 
                 <div id="social_media_buttons">
-                        <a href="https://wa.me/5588992430049">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
+                    <a href="https://wa.me/5588992430049" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
 
-                        <a href="https://www.instagram.com/aiarosabr/">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
+                    <a href="https://www.instagram.com/aiarosabr/" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
                 </div>
-
             </div>
 
             <div id="banner">
-                <img src="src/images/banner/grupo.png" alt="Banner Aiá Rosa" width="550px"/>
+                <img src="src/images/banner/grupo.png" alt="Banner Aiá Rosa - Grupo de mulheres vestindo nossas roupas" width="550"/>
             </div>
-
         </section>
-<!--  
-        <section id="menu">
-            <h2 class="section_title">
-                Nossas Peças
-            </h2>
 
-            <h3 class="section_subtitle">
-                Adicionadas recentemente
-            </h3>
+        <section id="destaques" class="secao-produtos">
+            <h2 class="section_title">Destaques da Semana</h2>
+            <p class="section_subtitle">As peças mais amadas pelas nossas clientes</p>
 
-            <div id="pecas">
-                <div class="peca">
-
-                    <img src="src/images/pecas/p1.PNG" class="" alt="peca1"/>
-                    <h3 class="peca1_title">T-shirt Basic</h3>
-                    <span class="peca1_discription">
+            <div class="produtos-container">
+                <article class="produto">
+                    <img src="src/images/pecas/p1.PNG" alt="T-shirt Basic - Camiseta básica feminina"/>
+                    <h3 class="produto-titulo">T-shirt Basic</h3>
+                    <span class="produto-descricao">
                         Camiseta básica, 100% algodão
                     </span>
 
-                    <div class="peca1_avaliacao">
+                    <div class="produto-avaliacao">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -125,87 +141,289 @@
                         <span>(500+)</span>
                     </div>
 
-                    <div class="peca1_preco">
+                    <div class="produto-preco">
                         <h4>R$ 29,90</h4>
                         <button class="btn_default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
                     </div>
+                </article>
+                
+                <article class="produto">
+                    <img src="src/images/pecas/p2.PNG" alt="Vestido Floral - Vestido estampado com flores"/>
+                    <h3 class="produto-titulo">Vestido Floral</h3>
+                    <span class="produto-descricao">
+                        Vestido midi, tecido leve
+                    </span>
+
+                    <div class="produto-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                        <span>(320+)</span>
+                    </div>
+
+                    <div class="produto-preco">
+                        <h4>R$ 89,90</h4>
+                        <button class="btn_default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </article>
+                
+                <article class="produto">
+                    <img src="src/images/pecas/p3.PNG" alt="Calça Jeans - Calça jeans skinny"/>
+                    <h3 class="produto-titulo">Calça Jeans</h3>
+                    <span class="produto-descricao">
+                        Calça jeans skinny, elastano
+                    </span>
+
+                    <div class="produto-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(420+)</span>
+                    </div>
+
+                    <div class="produto-preco">
+                        <h4>R$ 119,90</h4>
+                        <button class="btn_default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="promocoes" class="secao-produtos promocoes">
+            <h2 class="section_title">Promoções</h2>
+            <p class="section_subtitle">Aproveite nossos descontos especiais</p>
+
+            <div class="produtos-container">
+                <article class="produto">
+                    <span class="etiqueta-promocao">-30%</span>
+                    <img src="src/images/pecas/p4.PNG" alt="Blusa de Tricô - Blusa de tricô com desconto"/>
+                    <h3 class="produto-titulo">Blusa de Tricô</h3>
+                    <span class="produto-descricao">
+                        Blusa de tricô, fio especial
+                    </span>
+
+                    <div class="produto-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(180+)</span>
+                    </div>
+
+                    <div class="produto-preco">
+                        <span class="preco-antigo">R$ 79,90</span>
+                        <h4>R$ 55,90</h4>
+                        <button class="btn_default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+
+                    <div class="contador-promocao">
+                        <p>Promoção termina em: <span id="contador">10:00</span></p>
+                    </div>
+                </article>
+                
+                <article class="produto">
+                    <span class="etiqueta-promocao">-20%</span>
+                    <img src="src/images/pecas/p5.PNG" alt="Saia Midi - Saia plissada com desconto"/>
+                    <h3 class="produto-titulo">Saia Midi</h3>
+                    <span class="produto-descricao">
+                        Saia plissada, tecido fluido
+                    </span>
+
+                    <div class="produto-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                        <span>(250+)</span>
+                    </div>
+
+                    <div class="produto-preco">
+                        <span class="preco-antigo">R$ 69,90</span>
+                        <h4>R$ 55,90</h4>
+                        <button class="btn_default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="novidades" class="secao-produtos">
+            <h2 class="section_title">Novidades</h2>
+            <p class="section_subtitle">Confira nossos lançamentos</p>
+
+            <div class="produtos-container">
+                <article class="produto">
+                    <img src="src/images/pecas/p6.PNG" alt="Conjunto Verão - Conjunto de shorts e top"/>
+                    <h3 class="produto-titulo">Conjunto Verão</h3>
+                    <span class="produto-descricao">
+                        Conjunto de shorts e top, linho
+                    </span>
+
+                    <div class="produto-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(95+)</span>
+                    </div>
+
+                    <div class="produto-preco">
+                        <h4>R$ 129,90</h4>
+                        <button class="btn_default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </article>
+                
+                <article class="produto">
+                    <img src="src/images/pecas/p1.PNG" alt="Macacão - Macacão pantacourt"/>
+                    <h3 class="produto-titulo">Macacão Pantacourt</h3>
+                    <span class="produto-descricao">
+                        Macacão pantacourt, algodão
+                    </span>
+
+                    <div class="produto-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                        <span>(120+)</span>
+                    </div>
+
+                    <div class="produto-preco">
+                        <h4>R$ 149,90</h4>
+                        <button class="btn_default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </article>
+                
+                <article class="produto">
+                    <img src="src/images/pecas/p5.PNG" alt="Blazer - Blazer feminino"/>
+                    <h3 class="produto-titulo">Blazer Elegante</h3>
+                    <span class="produto-descricao">
+                        Blazer feminino, alfaiataria
+                    </span>
+
+                    <div class="produto-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(75+)</span>
+                    </div>
+
+                    <div class="produto-preco">
+                        <h4>R$ 189,90</h4>
+                        <button class="btn_default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2 class="section_title">Sobre a Aiá Rosa</h2>
+            <div class="sobre-container">
+                <div class="sobre-texto">
+                    <p>Na Aiá Rosa, acreditamos que a moda deve ser acessível, confortável e expressiva. Nossas peças são cuidadosamente selecionadas para oferecer versatilidade e atemporalidade, acompanhando você em todos os momentos.</p>
+                    
+                    <h3>Nossa Localização</h3>
+                    <address>
+                        <p><i class="fa-solid fa-location-dot"></i> Rua Miguel Rodrigues Santiago, 141 - Centro - Palhano, Ce</p>
+                        <p><i class="fa-solid fa-phone"></i> (88) 99243-0049</p>
+                        <p><i class="fa-solid fa-envelope"></i> contato@aiarosa.com.br</p>
+                    </address>
+                    
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Segunda a Sexta: 9h às 18h</p>
+                    <p>Sábado: 9h às 13h</p>
                 </div>
-                <div class="peca">
-
-                    <img src="src/images/pecas/p1.PNG" class="" alt="peca1"/>
-                    <h3 class="peca1_title">T-shirt Basic</h3>
-                    <span class="peca1_discription">
-                        Camiseta básica, 100% algodão
-                    </span>
-
-                    <div class="peca1_avaliacao">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="peca1_preco">
-                        <h4>R$ 29,90</h4>
-                        <button class="btn_default">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="peca">
-
-                    <img src="src/images/pecas/p1.PNG" class="" alt="peca1"/>
-                    <h3 class="peca1_title">T-shirt Basic</h3>
-                    <span class="peca1_discription">
-                        Camiseta básica, 100% algodão
-                    </span>
-
-                    <div class="peca1_avaliacao">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="peca1_preco">
-                        <h4>R$ 29,90</h4>
-                        <button class="btn_default">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="peca">
-
-                    <img src="src/images/pecas/p1.PNG" class="" alt="peca1"/>
-                    <h3 class="peca1_title">T-shirt Basic</h3>
-                    <span class="peca1_discription">
-                        Camiseta básica, 100% algodão
-                    </span>
-
-                    <div class="peca1_avaliacao">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="peca1_preco">
-                        <h4>R$ 29,90</h4>
-                        <button class="btn_default">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
+                
+                <div class="sobre-imagem">
+                    <img src="src/images/main/logo.png" alt="Interior da loja Aiá Rosa" width="400"/>
                 </div>
             </div>
-            -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="src/images/main/rosa.png" alt="Logo Aiá Rosa" width="80"/>
+                <p>Peças versáteis & Atemporais, feitas para você, mulher!</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/aiarosabr/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/5588992430049" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#promocoes">Promoções</a></li>
+                    <li><a href="#novidades">Novidades</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Ajuda</h3>
+                <ul>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                    <li><a href="#">Formas de Pagamento</a></li>
+                    <li><a href="#">Perguntas Frequentes</a></li>
+                    <li><a href="#">Entregas</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Para novidades:</h3>
+                <p>Inscreva-se para receber nossas novidades e promoções</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <button type="submit" class="btn_default">Inscrever</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Aiá Rosa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="modal-newsletter" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Receba 10% OFF na primeira compra!</h3>
+            <p>Cadastre-se na nossa newsletter</p>
+            <form class="newsletter-form-modal">
+                <input type="email" placeholder="Seu melhor e-mail" required>
+                <button type="submit" class="btn_default">Quero desconto!</button>
+            </form>
+        </div>
+    </div>
+
     <script src="src/javascript/script.js"></script>
 </body>
 </html>
