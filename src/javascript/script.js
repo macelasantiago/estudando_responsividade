@@ -126,7 +126,7 @@ $(document).ready(function() {
     // iniciar contador
     atualizarContador();
 
-    // Mostrar modal após 5 segundos
+    // mostrar modal após 5 segundos
     setTimeout(() => {
         $('#modal-newsletter').fadeIn();
     }, 5000);
